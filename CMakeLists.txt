@@ -14,6 +14,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 include(cmake/spd_log.cmake)
 include(cmake/glfw.cmake)
+include(cmake/glad.cmake)
 
 
 # 프로젝트 INCLUDE / LIB 옵션
