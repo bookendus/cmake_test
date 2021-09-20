@@ -4,3 +4,5 @@ CMakeFiles/
 CMakeCache.txt
 .DS_Store
 .vscode/
+example
+.vscode/settings.json

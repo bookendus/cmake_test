@@ -21,5 +21,5 @@ ExternalProject_add (
         -DGLFW_BUILD_DOCS=OFF
     )
 set(DEP_LIST ${DEP_LIST} dep_glfw)
-set(DEP_LIBS ${DEP_LIBS} glfw3 dl m GL GLU X11 pthread)
+set(DEP_LIBS ${DEP_LIBS} glfw3 dl m GLU X11 pthread)
 
