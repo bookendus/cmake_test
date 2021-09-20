@@ -61,17 +61,17 @@ int main(int argc, char** argv) {
     auto glVersion = glGetString(GL_VERSION);
     SPDLOG_INFO("OpenGL context version: {}", glVersion);
 
+    //  context 지정
+    OnFrameBufferSizeChange(window, WINDOW_WIDTH, WINDOW_HEIGHT);
+    glfwSetFramebufferSizeCallback(window, OnFrameBufferSizeChange);
+    glfwSetKeyCallback(window, OnKeyEvent); 
+
     auto context = Context::Create();
     if (!context) {
         SPDLOG_ERROR("failed to create context");
         glfwTerminate();
         return -1;
     }
-
-    //  context 지정
-    OnFrameBufferSizeChange(window, WINDOW_WIDTH, WINDOW_HEIGHT);
-    glfwSetFramebufferSizeCallback(window, OnFrameBufferSizeChange);
-    glfwSetKeyCallback(window, OnKeyEvent); 
 
     // glfw 루프 실행, 윈도우 close 버튼을 누르면 ㅈㅇ상 종료
     SPDLOG_INFO("Start main loop");
