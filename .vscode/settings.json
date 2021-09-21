@@ -1,7 +1,6 @@
 {
-    "C_Cpp.errorSquiggles": "Enabled",
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
     "cmake.debugConfig": {
-        "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}"
     }
 }
